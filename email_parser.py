@@ -77,7 +77,7 @@ msg['From'] = senders_email_address
 msg['To'] = send_to_email
 
 text = msg.as_string()
-smtpObj.sendmail('harveypowelltestcs@gmail.com', send_to_email, text)
+smtpObj.sendmail(senders_email_address, send_to_email, text)
 
 smtpObj.quit()
 todaysEmail.close()
